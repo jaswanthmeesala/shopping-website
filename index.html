@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopper's Hub</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -21,15 +21,18 @@
                 <li><a href="#electronics">Electronics</a></li>
                 <li><a href="#food">Food</a></li>
                 <li><a href="#toys">Toys</a></li>
+                <li><a href="#"><p>cart<sup id="cart">0</sup></p></a></li>
             </ul>
         </div>
         <div id="navr">
-            <input type="text" placeholder="product name...">
-            <input type="button" value="search">
+            <input type="text" id="in" placeholder="product name...">
+            <input type="button" id="up" value="search">
         </div>
     </nav>
     <div id="slide">
-        <video src="slide1.mp4" autoplay controls></video>
+        <video width="300" height="200" autoplay loop muted
+            src="slide1.mp4" type="video/mp4">
+        </video> 
     </div>
     <main>
         <div id="fashion">
@@ -38,32 +41,17 @@
                 <div class="box">
                     <img src="sho1.jpg">
                     <p class="price">Rs. 999</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
                 <div class="box">
                     <img src="sho2.jpg">
                     <p class="price">Rs. 2999</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                        <input type="button" value="Add to cart" onclick="cart()">                    
                 </div>
                 <div class="box">
                     <img src="sho3.jpg">
                     <p class="price">Rs. 1499</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
             </div>
         </div>
@@ -73,32 +61,17 @@
                 <div class="box">
                     <img src="ele2.jpg">
                     <p class="price">Rs. 79999</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
                 <div class="box">
                     <img src="ele1.jpg">
                     <p class="price">Rs. 49999</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
                 <div class="box">
                     <img src="ele3.jpg">
                     <p class="price">Rs. 85499</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
             </div>
         </div>
@@ -108,32 +81,17 @@
                 <div class="box">
                     <img src="food1.jpg">
                     <p class="price">Rs. 49</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
                 <div class="box">
                     <img src="food2.jpg">
                     <p class="price">Rs. 199</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
                 <div class="box">
                     <img src="food3.jpg">
                     <p class="price">Rs. 99</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
             </div>
         </div>
@@ -143,37 +101,21 @@
                 <div class="box">
                     <img src="toy1.jpg">
                     <p class="price">Rs. 399</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
                 <div class="box">
                     <img src="toy2.jpg">
                     <p class="price">Rs. 999</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
                 <div class="box">
                     <img src="toy3.jpg">
                     <p class="price">Rs. 699</p>
-                    <select>
-                        <option>1 Qty</option>
-                        <option>2 Qty</option>
-                        <option>3 Qty</option>
-                    </select>
-                    <input type="button" value="Add to cart">
+                    <input type="button" value="Add to cart" onclick="cart()">
                 </div>
             </div>
         </div>
     </main>
-
     <footer>
 
     </footer>
