@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Audiowide';
+    scroll-behavior: smooth;
 }
 header{
     background-color: #b5b5ff;
@@ -24,12 +25,31 @@ li{
     display: inline;
     float: left;
 }
+#in,#up{
+    margin: 5px;
+    height: 25px;
+}
 input{
+    margin: 5px;
+    height: 25px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input:hover{
+    background-color: darkblue;
+    color: white;
+    border: 2px solid darkblue;
+}
+.in{
     margin: 5px;
     height: 25px;
 }
 #navr{
-    margin-right: 35px;
+    margin-right: 20px;
+    justify-content: space-between;
 }
 nav a{
     text-decoration: none;
@@ -74,4 +94,10 @@ img{
 .box{
     display: grid;
     justify-items:center;
+}
+sup{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px double black;
+    padding: 2px;
+    border-radius: 1px;
 }
